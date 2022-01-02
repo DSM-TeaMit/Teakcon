@@ -7,7 +7,7 @@ const setSignedCommit = (signed: boolean) => {
 };
 
 const getSignedCommit = () => {
-  return config.set("signCommits");
+  return config.get("signCommits");
 };
 
 export default {
