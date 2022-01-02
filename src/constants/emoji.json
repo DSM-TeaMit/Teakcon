@@ -1,0 +1,52 @@
+[
+  {
+    "name": "gear",
+    "code": "\u2699\ufe0f",
+    "description": "프로젝트 세팅"
+  },
+  {
+    "name": "plus",
+    "code": "\u2795\ufe0f",
+    "description": "파일 / 폴더 추가"
+  },
+  {
+    "name": "chocolate_bar",
+    "code": "\uD83C\uDF6B",
+    "description": "기능 추가"
+  },
+  {
+    "name": "smiling_face",
+    "code": "\uD83D\uDE0E",
+    "description": "버그 / 오류 수정"
+  },
+  {
+    "name": "bomb",
+    "code": "\uD83D\uDCA3",
+    "description": "기능 삭제"
+  },
+  {
+    "name": "trash_can",
+    "code": "\uD83D\uDDD1",
+    "description": "파일 삭제"
+  },
+  {
+    "name": "file_folder",
+    "code": "\uD83D\uDCC1",
+    "description": "파일 구조 변경"
+  },
+  {
+    "name": "test_tube",
+    "code": "\uD83E\uDDEA",
+    "description": "테스트 코드 추가"
+  },
+  {
+    "name": "lower_left_ballpoint_pen",
+    "code": "\uD83D\uDD8A",
+    "description": "문서 수정"
+  },
+  {
+    "name": "party_popper",
+    "code": "\uD83C\uDF89",
+    "description": "새 버전 릴리즈"
+  }
+]
