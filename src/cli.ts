@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Command } from "commander";
 import commit from "./commands/commit";
 import config from "./commands/config";
