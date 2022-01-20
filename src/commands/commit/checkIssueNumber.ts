@@ -8,5 +8,5 @@ export const checkIssueNumber = (): string | undefined => {
     .filter((branch) => branch.startsWith("*"))[0]
     .substring(1);
 
-  return branch.match(/^([1-9]*)/)?.[0];
+  return /^\w*\/([1-9]*)/g.exec(branch)?.[1];
 };
