@@ -13,6 +13,10 @@ export const questions = () => {
       choices: fileList().map((name) => ({
         name,
       })),
+      validate: (input: Array<string>) => {
+        if (!input.length) return "파일을 선택하세요.";
+        return true;
+      },
     });
   questions.push(
     {
@@ -29,11 +33,23 @@ export const questions = () => {
       type: "input",
       message: "이슈 번호를 입력해 주세요:",
       default: checkIssueNumber(),
+      validate: (input: string) => {
+        if (Number.isNaN(Number.parseInt(input)) && input) {
+          return "이슈 번호에는 숫자만 입력할 수 있습니다.";
+        }
+        return true;
+      },
     },
     {
       name: "title",
       type: "input",
       message: "커밋 제목을 입력해 주세요:",
+      validate: (input: unknown) => {
+        if (!input) {
+          return "커밋 제목은 비어있을 수 없습니다.";
+        }
+        return true;
+      },
     },
     { name: "message", type: "input", message: "커밋 메시지를 입력해 주세요:" }
   );
