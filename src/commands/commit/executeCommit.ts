@@ -29,7 +29,7 @@ export const executeCommit = (answer: Answer) => {
         chalk.cyan(
           `${answer.emoji}${answer.issue ? ` (#${answer.issue})` : ""} - ${
             answer.title
-          }"`
+          }`
         )
     );
   } catch (e: any) {
