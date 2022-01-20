@@ -4,7 +4,7 @@ export const checkStaged = (): boolean => {
   const staged = execSync("git status --short")
     .toString()
     .split("\n")
-    .filter((name) => name.startsWith("A") || name.startsWith("M"));
+    .filter((name) => !/^\s/.test(name) && name);
 
   return Boolean(staged.length);
 };
@@ -13,7 +13,7 @@ export const fileList = (): string[] => {
   const staged = execSync("git status --short")
     .toString()
     .split("\n")
-    .filter((name) => !name.startsWith("A"))
+    .filter((name) => /^\s/.test(name))
     .map((name) => name.substring(3))
     .filter((name) => name);
 
