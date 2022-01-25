@@ -4,7 +4,7 @@ export const checkStaged = (): boolean => {
   const staged = execSync("git status --short")
     .toString()
     .split("\n")
-    .filter((name) => !/^\s/.test(name) && name);
+    .filter((name) => !/^\s/.test(name) && name && !name.startsWith("?"));
 
   return Boolean(staged.length);
 };
