@@ -48,5 +48,10 @@
     "name": "party_popper",
     "code": "\uD83C\uDF89",
     "description": "새 버전 릴리즈"
+  },
+  {
+    "name": "dizzy",
+    "code": "\uD83D\uDCAB",
+    "description": "코드 수정"
   }
 ]
