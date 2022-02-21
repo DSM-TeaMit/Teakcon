@@ -20,7 +20,7 @@ export const executeCommit = (answer: Answer) => {
     execSync(
       `git commit -m "${answer.emoji}${
         answer.issue ? ` (#${answer.issue})` : ""
-      } - ${answer.title}" ${answer.message ? `-m ${answer.message}` : ""} ${
+      } - ${answer.title}" ${answer.message ? `-m "${answer.message}"` : ""} ${
         configuration.getSignedCommit() ? "-S" : ""
       }`
     );
